@@ -1,0 +1,93 @@
+/* navigation bar */
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    background-color: rgb(89, 145, 201);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+}
+
+nav img {
+    width: 200px;
+    cursor: pointer;
+}
+
+nav .navigetion ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+nav .navigetion ul li{
+    list-style: none;
+    margin-left: 40px;
+}
+
+nav .navigetion ul li a {
+    text-decoration: none;
+    color: rgb(245, 244, 244);
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s ease;
+}
+
+nav .navigetion ul li a:hover{
+    color: rgb(24, 20, 20);
+
+}
+
+ 
+/* home section */
+
+#home {
+    
+     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("photos/students.jpeg");
+     height: 100vh;
+     width: 100%;
+     background-position: center;
+     background-size: cover;  
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     flex-direction: column;
+     padding-top: 40px;
+}
+
+#home h2 {
+    color: rgb(238, 239, 241);
+    font-size: 50px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+  
+#home p {
+    color: rgb(240, 242, 245);
+    font-size: 25px;
+    margin-bottom: 40px;
+    width: 60%;
+    line-height: 1.5;
+}
+
+#home .btn a {
+    text-decoration: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+#home .btn a.blue {
+    background-color: #3498db;
+    color: white;
+}
+
+#home .btn a.green {
+    background-color: #2ecc71;
+    color: white;
+}
