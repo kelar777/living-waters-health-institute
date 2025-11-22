@@ -105,3 +105,69 @@ nav .navigetion ul li a:hover{
     color: rgb(34, 179, 34);
     
 }
+
+/* about us section */
+
+#about-us {
+    padding: 5vw 8vw 0vw 8vw;
+    text-align: center;
+}
+
+#about-us .fea-base {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+   grid-gap: 1rem;
+   margin-top: 50px;
+}
+ 
+#about-us .fea-box {
+    background-color: gainsboro;
+    text-align: start;
+    
+}
+
+/* #about-us .fea-box i {
+  
+}*/
+
+#about-us .fea-box h3 {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: rgb(33, 32, 32);
+    padding: 13px 0 7px 0;
+}
+
+/* courses section */   
+
+#course {
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+
+#course .course-box {
+    
+     display: grid;
+     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+     grid-gap: 1rem;
+     margin-top: 50px;
+}
+
+
+#course .courses {
+    text-align: start;
+    background: #d8e1e7;
+    height: 60%;
+}
+
+#course .courses img {
+    width: 100%;
+    height: 80px;
+    background-size: cover;
+    background-position: center;
+}
+
+footer .p{
+   
+    text-align: center;
+    padding: 20px;
+}
