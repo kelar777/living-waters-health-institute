@@ -1,19 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+ body {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* global styles */
+h1 {
+    font-size: 2.5rem;
+    color: rgb(33, 32, 32);
+    font-weight: 700;
+}
+
+span {
+    font-size: .9rem;
+    color: rgb(31, 32, 32);
+}
+
+h6 {
+    font-size: 1rem;
+    color: rgb(33, 32, 32);
+    
+}
+
+
 /* navigation bar */
 
 nav {
+    position: fixed;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 1vw 8vw;
-    background-color: rgb(89, 145, 201);
+    width: 100%;
+    background-color: rgba(125, 169, 212, 0.8);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
 }
 
 nav img {
-    width: 200px;
+    width: 100px;
     cursor: pointer;
-}
+} 
 
 nav .navigetion ul {
     display: flex;
@@ -23,7 +56,7 @@ nav .navigetion ul {
 
 nav .navigetion ul li{
     list-style: none;
-    margin-left: 40px;
+    margin-left: 30px;
 }
 
 nav .navigetion ul li a {
@@ -35,7 +68,7 @@ nav .navigetion ul li a {
 }
 
 nav .navigetion ul li a:hover{
-    color: rgb(24, 20, 20);
+    color: rgb(40, 30, 129);
 
 }
 
@@ -59,20 +92,34 @@ nav .navigetion ul li a:hover{
 
 #home h2 {
     color: rgb(238, 239, 241);
-    font-size: 50px;
-    margin-bottom: 20px;
+    font-size: 2.25rem;
     text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
 }
   
 #home p {
     color: rgb(240, 242, 245);
-    font-size: 25px;
-    margin-bottom: 40px;
+    font-size: 0.95rem;
     width: 60%;
-    line-height: 1.5;
+    line-height: 25px;
+    margin: 20px 0 40px 0;
 }
 
-#home .btn a {
+#home .btn {
+    margin-top: 30px;
+}
+
+#home a {
+    text-decoration: none;
+    font-size: 0.95rem;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: 600;   
+    background-color: aqua;
+}
+
+#home a.btn {
     text-decoration: none;
     padding: 15px 30px;
     margin: 0 10px;
@@ -82,59 +129,68 @@ nav .navigetion ul li a:hover{
     transition: 0.3s ease;
 }
 
-#home .btn a.blue {
+#home a.blue {
     background-color: #3498db;
     color: white; 
     transition: 0.5s ease;
 }
 
-#home .btn a.blue:hover {
+#home a.blue:hover {
     background-color: #d8e1e7;
     color: #3498db;
     
 }
 
-#home .btn a.green {
+#home a.green {
     background-color: #2ecc71;
     color: white;
     transition: 0.5s ease;
 }
 
-#home .btn a.green:hover {
+#home a.green:hover {
     background-color: #d8e1e7;
     color: rgb(34, 179, 34);
     
 }
 
-/* about us section */
+/* features */
 
-#about-us {
+#features {
     padding: 5vw 8vw 0vw 8vw;
     text-align: center;
 }
 
-#about-us .fea-base {
+#features .fea-base {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
    grid-gap: 1rem;
    margin-top: 50px;
 }
  
-#about-us .fea-box {
+#features .fea-box {
     background-color: gainsboro;
     text-align: start;
     
 }
 
-/* #about-us .fea-box i {
+ #features .fea-box i {
+    font-size: 3rem;
+    color: rgb(33, 32, 32);
   
-}*/
+}
 
-#about-us .fea-box h3 {
+#features .fea-box h3 {
     font-size: 1.8rem;
     font-weight: 600;
     color: rgb(33, 32, 32);
     padding: 13px 0 7px 0;
+}
+
+#features .fea-box p{
+    font-size: 1rem;
+    font-weight: 40;
+    color: rgb(33, 32, 32);
+
 }
 
 /* courses section */   
