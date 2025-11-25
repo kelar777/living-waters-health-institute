@@ -193,6 +193,159 @@ nav .navigetion ul li a:hover{
 
 }
 
-/* courses */   
+/* courses */
 
+#course {
+padding: 5vw 8vw 0vw 8vw;
+    text-align: center;
+}
+
+#course h1 {
+    margin-bottom: 40px;
+}
+#course .courses{
+    display: inline-block;
+    width: 300px;
+    margin: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: start;
+    position: relative;
+}
+
+#course .courses img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-position: center;
+}
+
+#course .courses .details {
+    padding: 15px 20px 20px 20px;
+}
+
+#course .courses .details i {
+    color: gold;
+    
+}
+
+#course .courses .cost {
+   background-color: #3498db;
+   color: yellow;
+   line-height: 70px;
+   width: 70px;
+   height: 70px;
+   text-align: center;
+   border-radius: 50%;
+   position: absolute;
+   right: 15px;
+   bottom: 1px;
+}
+
+/* registration section */
+
+#registration {
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+    background-color: rgb(160, 172, 180);
+    justify-content: space-between;
+    
+
+}
+
+
+#registration h2 {
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    
+}
+
+#registration p {
+    color: rgb(218, 217, 217);
+    margin-bottom: 20px;
+}
+
+#registration .reg-box {
+    display: inline-block;
+    background-image: linear-gradient(rgba(49, 48, 51, 0.5),rgba(62, 62, 65, 0.5)), url("photos/WhatsApp\ Image\ 2025-11-14\ at\ 9.54.43\ AM\ \(2\).jpeg");
+    padding: 20px 20px 20px 20px;
+    color: white;
+    border-radius: 110px 110px;
+   
+}
+
+#registration .reg-btn {
+    background-color: rgb(69, 107, 138);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+
+
+}
+
+#registration img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background-position: center;
+    margin-bottom: 15px;
+    border-radius: 110px 110px;
+    
+}
+
+#registration .form{
+    margin-top: 20px;
+    padding: 15px 30px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: #3498db;
+    color: white; 
+    transition: 0.5s ease;
+    
+}
+
+.submit {
+    background-color: #2ecc71;
+    padding: 15px 30px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    
+}
+
+.submit:hover {
+    background-color: #549e64;
+    color: rgb(179, 228, 179);
+    
+}
+
+#registration .form:hover {
+    background-color: #d8e1e7;
+    color: #7ea6da;
+    
+}
+
+#registration .input-field {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9fb1bd;
+    font-size: 1rem;
+  
+
+}
+
+
+
+/* footer section */
 
