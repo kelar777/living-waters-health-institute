@@ -11,6 +11,7 @@
 }
 
 /* global styles */
+
 h1 {
     font-size: 2.5rem;
     color: rgb(33, 32, 32);
@@ -170,6 +171,8 @@ nav .navigetion ul li a:hover{
 #features .fea-box {
     background-color: gainsboro;
     text-align: start;
+    padding: 30px 20px 30px 20px;
+    border-radius: 10px;
     
 }
 
@@ -249,9 +252,9 @@ padding: 5vw 8vw 0vw 8vw;
 #registration {
     padding: 5vw 8vw 5vw 8vw;
     text-align: center;
-    background-color: rgb(160, 172, 180);
+    background-color: rgb(217, 226, 231);
     justify-content: space-between;
-    
+
 
 }
 
@@ -271,7 +274,7 @@ padding: 5vw 8vw 0vw 8vw;
     display: inline-block;
     background-image: linear-gradient(rgba(49, 48, 51, 0.5),rgba(62, 62, 65, 0.5)), url("photos/WhatsApp\ Image\ 2025-11-14\ at\ 9.54.43\ AM\ \(2\).jpeg");
     padding: 20px 20px 20px 20px;
-    color: white;
+    color: rgb(236, 226, 226);
     border-radius: 110px 110px;
    
 }
@@ -281,7 +284,7 @@ padding: 5vw 8vw 0vw 8vw;
     padding: 15px;
     text-align: center;
     border-radius: 10px 10px 10px 10px;
-    color: white;
+    color: rgb(231, 231, 231);
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
@@ -298,33 +301,153 @@ padding: 5vw 8vw 0vw 8vw;
     border-radius: 110px 110px;
     
 }
+#registration .form {
+    background-color: rgb(115, 133, 160);
+    padding: 30px 30px 30px 30px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.2);
+    color: rgb(33, 32, 32);
+    width: 400px;
+    margin: auto;
+    margin-top: 24px;
 
-#registration .form{
-    margin-top: 20px;
-    padding: 15px 30px;
-    border-radius: 30px;
-    font-size: 20px;
-    font-weight: 600;
+}
+
+#registration .form input[type="text"],
+#registration .form input[type="email"],
+#registration .form input[type="tel"] {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9fb1bd;
+    font-size: 1rem;
+    outline: none;
+}
+
+#registration .form ::-webkit-file-upload-button {
     background-color: #3498db;
-    color: white; 
-    transition: 0.5s ease;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+#registration .form select {
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9fb1bd;
+    font-size: 1rem;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#registration .form select option {
+    background-color: white;
+    color: rgb(33, 32, 32);
+}
+
+#registration .form select:hover {
+    background-color: #d8e1e7;
+    color: #7ea6da;
     
 }
 
-.submit {
-    background-color: #2ecc71;
-    padding: 15px 30px;
-    margin-top: 20px;
-    border-radius: 30px;
-    font-size: 20px;
+#registration .form select:focus {
+    outline: none;
+    border-bottom: 2px solid #72d39e;
+}
+
+
+#registration .form label {
+    font-size: 1rem;
     font-weight: 600;
-    transition: 0.3s ease;
-    
+    color: rgb(33, 32, 32);
 }
 
-.submit:hover {
-    background-color: #549e64;
-    color: rgb(179, 228, 179);
+#registration .form .checkbox-label {
+    display: flex;
+    align-items: center;
+    font-size: 0.9rem;
+    margin-top: 10px;
+}
+
+#registration .form .checkbox-label input {
+    margin-right: 10px;
+}
+
+#registration .form .checkbox-label a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+#registration .form .checkbox-label a:hover {
+    text-decoration: underline;
+}
+
+#registration .form .checkbox-label input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    accent-color: #3498db;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #3498db;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:checked {
+    background-color: #3498db;
+    border-color: #3498db;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:checked:hover {
+    background-color: #2980b9;
+    border-color: #2980b9;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:checked:focus {
+    box-shadow: 0 0 5px #2980b9;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:indeterminate {
+    background-color: #f39c12;
+    border-color: #f39c12;
+}
+
+#registration .form .checkbox-label input[type="checkbox"]:indeterminate:hover {
+    background-color: #e67e22;
+    border-color: #e67e22;
+}
+
+#registration .submit {
+    background-color: #2ecc71;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: 0.5s ease;
+}
+
+#registration .submit:hover {
+    background-color: #babdbb;
+    color: rgb(236, 236, 236);
     
 }
 
@@ -341,8 +464,11 @@ padding: 5vw 8vw 0vw 8vw;
     border: none;
     border-bottom: 2px solid #9fb1bd;
     font-size: 1rem;
-  
+    outline: none;
+}
 
+#registration .input-field {
+    border-bottom: 2px solid #72d39e;
 }
 
 
