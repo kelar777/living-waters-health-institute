@@ -14,12 +14,14 @@
         <img src="logo/logo (2).jpeg">
          <div class="navigetion"> 
               <ul>
+                <i id="menu-close" class="fas fa-times"></i>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">Courses</a></li>
                 <li><a href="#">Contacts</a></li>
               </ul>
+              <img id="menu-btn" src="photos/menu.png" alt="">
          </div>
     </nav>
 
@@ -245,6 +247,7 @@
 <!-- experts -->
 
     <section id="list">
+       
                 <h1>Why Choose Us?</h1>
                 <p>At Living Waters Health Institute, we are committed to providing exceptional healthcare education and training. Here are some reasons why you should choose us:</p>
 
@@ -377,14 +380,21 @@
         <p>&copy; 2026 Living Waters Health Institute. All rights reserved.</p>
            <div class="pro-links">
             <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
+            <i class="fab fa-twitter"></i>
             <i class="fab fa-linkedin-in"></i>
            </div>
       </div>
    
    </footer> 
    
-
+ <script>
+     $('#menu-close').click(function(){
+        $('nav .navigation ul').addclass('active')
+    })
+    $('#menu-close').click(function(){
+        $('nav .navigation ul').removeclass('active')
+    })
+ </script>
 
 </body>
 </html>

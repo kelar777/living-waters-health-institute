@@ -42,12 +42,28 @@ nav {
     width: 100%;
     background-color: rgba(125, 169, 212, 0.8);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.20);
+    z-index: 999;
 }
 
 nav img {
     width: 100px;
     cursor: pointer;
 } 
+
+#menu-btn {
+
+width: 10px;
+height: 10px;
+display: none;
+}
+
+#menu-close {
+    display: none;
+}
+
+nav .navigetion{
+    display: flex;
+}
 
 nav .navigetion ul {
     display: flex;
@@ -157,7 +173,7 @@ nav .navigetion ul li a:hover{
 /* features */
 
 #features {
-    padding: 5vw 8vw 0vw 8vw;
+    padding: 5vw 8vw 8vw 8vw;
     text-align: center;
 }
 
@@ -199,7 +215,7 @@ nav .navigetion ul li a:hover{
 /* courses */
 
 #course {
-padding: 5vw 8vw 0vw 8vw;
+padding: 5vw 8vw 8vw 8vw;
     text-align: center;
 }
 
@@ -476,6 +492,7 @@ padding: 5vw 8vw 0vw 8vw;
 #list {
     padding: 5vw 8vw 5vw 8vw;
     text-align: center;
+    background: #2ecc71;
 }
 #list h1 {
     margin-bottom: 20px;
@@ -483,7 +500,7 @@ padding: 5vw 8vw 0vw 8vw;
 }
 
 #list p {
-    color: rgb(117, 116, 116);
+    color: rgb(247, 245, 245);
     margin-bottom: 30px;
 }
 #list .list-box {
@@ -495,7 +512,7 @@ padding: 5vw 8vw 0vw 8vw;
 }
 
 #list .list-box .list-cotent {
-    background-color: gainsboro;
+    background-color: rgb(243, 239, 239);
     text-align: center;
     padding: 30px 20px 30px 20px;
     border-radius: 10px;
@@ -739,3 +756,51 @@ footer .copyright .pro-links i:hover {
  p{
     text-align: center;
  }
+
+@media (max-width: 769px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    nav img{
+        width: 130px;
+
+    }
+    
+
+    #menu-btn {
+        display: initial;
+    }
+    #menu-close {
+        display: initial;
+        font-size: 1.6rem;
+        color: #fff;
+        padding: 38px 0 20px 20px;
+    }
+    nav .navigetion ul {
+        position: absolute;
+        top: 0;
+        right: -220px;
+        width: 220px;
+        background: rgba(17, 20, 104, 0.45);
+        backdrop-filter: blur(405px);
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+     nav .navigetion ul.active{
+        right: 0;
+     }
+
+    nav .navigetion ul li {
+        padding: 20px 0 20px 40px;
+        margin-left: 0;
+    }
+    nav .navigetion ul li a{
+        color: #fff;
+    }
+}
