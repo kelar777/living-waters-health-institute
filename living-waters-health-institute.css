@@ -471,20 +471,271 @@ padding: 5vw 8vw 0vw 8vw;
     border-bottom: 2px solid #72d39e;
 }
 
-/* experts section */
+/* profile section */
 
- #experts {
+#list {
     padding: 5vw 8vw 5vw 8vw;
     text-align: center;
 }
+#list h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
 
-#experts .expert-box {
+#list p {
+    color: rgb(117, 116, 116);
+    margin-bottom: 30px;
+}
+#list .list-box {
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 2rem;
     margin-top: 50px;
 }
 
+#list .list-box .list-cotent {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    border-radius: 10px;
+    
+}
+
+ #list .list-cotent img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+    #list .profile h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(46, 46, 59);
+        padding: 10px 0 7px 0;
+    }
+
+    #list .profile p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(33, 32, 32);
+    }
+
+ 
+
+/* experts section */
+
+ #experts {
+    padding: 5vw 8vw 5vw 8vw;
+    text-align: center;
+
+}
+
+#experts h1 {
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#experts p {
+    color: rgb(117, 116, 116);
+    margin-bottom: 30px;
+}
+
+#experts .expert-box {
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 2rem;
+    margin-top: 50px;
+}
+
+#experts .expert {
+    background-color: gainsboro;
+    text-align: center;
+    padding: 30px 20px 30px 20px;
+    border-radius: 10px;
+    
+}
+
+ #experts .expert img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-position: center;
+    margin-bottom: 15px;
+}
+
+    #experts .expert h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: rgb(46, 46, 59);
+        padding: 10px 0 7px 0;
+    }
+
+    #experts .expert p{
+        font-size: 1rem;
+        font-weight: 400;
+        color: rgb(33, 32, 32);
+    }
+
+   #experts .expert-box .profile-social{
+        margin-top: 15px;
+    }
+
+    #experts .expert-box .profile-social a {
+     
+        color: rgb(80, 106, 177);
+        font-size: 1.2rem;
+        transition: 10s ease;
+        cursor: pointer;
+    
+    }
+
+    #experts .expert-box .profile-social a:hover {
+        color: #3498db;
+   }
+   
+    #experts .expert-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+   .profile-social i {
+        font-size: 1.5rem;
+        color: rgb(80, 106, 177);
+        margin: 10px;
+        transition: 0.3s ease;
+        cursor: pointer;
+       
+     
+    }
+
+    .profile-social i:hover{
+       
+        border: 5px solid;
+        cursor: pointer;
+      
+        }
+
+
+        /* ours */
+
+    
+            
+
+     
+
+
+        
 
 /* footer section */
 
+
+footer {
+    padding: 8vw;
+    background-color: #4b8ec5;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+footer .footer-col{
+    padding-bottom: 40px;
+}
+
+footer h3{
+    color: #d8e1e7;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+
+footer li{
+    list-style: none;
+    color: #dad4d0;
+    padding: 10px 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+
+footer li:hover{
+    color: rgb(23, 43, 73);
+}
+
+footer p{
+    color: #d0d6db;
+}
+
+footer .subscribe{
+    margin-top: 30px;
+}
+
+footer input{
+    width: 220px;
+    padding: 15px 12px;
+    background: #4d524e;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+footer .subscribe a{
+    text-decoration: none;
+    font-size: 0.9rem;
+    padding: 13px 35px;
+    background-color: #fff;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+footer .subscribe a.yellow {
+    color: #fff;
+    background: #fdc938;
+    transition: 0.3s ease;
+}
+
+footer .subscribe a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #fff;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+footer .copyright p{
+    color: #fff;
+}
+
+footer .copyright .pro-links {
+    margin-top: 10px;
+    padding: 10px;
+}
+
+footer .copyright .pro-links i{
+    background-color: #5f715f;
+    color: #fff;
+    padding: 10px;
+}
+
+footer .copyright .pro-links i:hover {
+    background-color: #fdc938;
+    color: #2c2c2c;
+}
+/* last section */
+
+ p{
+    text-align: center;
+ }
