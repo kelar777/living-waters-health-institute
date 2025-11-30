@@ -803,4 +803,15 @@ footer .copyright .pro-links i:hover {
     nav .navigetion ul li a{
         color: #fff;
     }
+
+    #home {
+        padding-top: 0px;
+    }
+    #home p {
+        width: 90px;
+    }
+    #features {
+        padding: 8vw 4vw 0 4vw;
+    }
 }
+
