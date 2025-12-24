@@ -17,6 +17,7 @@
         <img src="logo/logo (2).jpeg">
          <div class="navigetion"> 
               <ul>
+                
                 <i id="menu-close" class="fas fa-times"></i>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">About us</a></li>
@@ -34,8 +35,9 @@
         <p>Living waters health institute is dedicated to providing quality healthcare education and services.</p>       
         
         <div class="btn">
-                <a class="blue" href="#">Apply Now</a>
-                <a class="green" href="#">Courses</a>   
+
+                <a class="blue" href="#registration">Apply Now</a>
+                <a class="green" href="#course">Courses</a>   
         </div>
     </section>
 
@@ -390,11 +392,11 @@
    </footer> 
    
  <script>
-     $('#menu-close').click(function(){
-        $('nav .navigation ul').addclass('active')
+    $('#menu-btn').click(function(){
+        $('nav .navigetion').addClass('active');    
     });
     $('#menu-close').click(function(){
-        $('nav .navigation ul').removeclass('active')
+        $('nav .navigetion').removeClass('active');    
     });
  </script>
 

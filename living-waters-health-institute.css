@@ -65,6 +65,20 @@ nav .navigetion{
     display: flex;
 }
 
+#menu-btn{
+    display: none;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+#menu-close{
+    display: none;
+    cursor: pointer;
+    justify-content: flex-end;
+    align-items: center;
+}
+
 nav .navigetion ul {
     display: flex;
     justify-content: flex-end;
@@ -215,7 +229,7 @@ nav .navigetion ul li a:hover{
 /* courses */
 
 #course {
-padding: 5vw 8vw 8vw 8vw;
+padding: 8vw 8vw 8vw 8vw;
     text-align: center;
 }
 
@@ -546,7 +560,7 @@ padding: 5vw 8vw 8vw 8vw;
 /* experts section */
 
  #experts {
-    padding: 5vw 8vw 5vw 8vw;
+    padding: 8vw 8vw 8vw 8vw;
     text-align: center;
 
 }
@@ -757,61 +771,53 @@ footer .copyright .pro-links i:hover {
     text-align: center;
  }
 
-@media (max-width:  769px) {
+
+@media (max-width:  769px) {    
     nav {
-        padding: 15px 20px;
+        position: 15px 20px;
     }
-
-    nav img{
-        width: 80px;
-
-    }
-    
-
-    #menu-btn {
+    #menu-btn{
         display: initial;
+        cursor: pointer;
     }
-    #menu-close {
+
+    #menu-close{
         display: initial;
         font-size: 1.6rem;
         color: #fff;
         padding: 30px 0 20px 20px;
+        cursor: pointer;
     }
     nav .navigetion ul {
-        position: absolute;
-        top: 0;
-        right: -220px;
-        width: 220px;
-        background: rgba(17, 20, 104, 0.45);
-        backdrop-filter: blur(4.5px);
-        border: 1px solid rgba(255, 255, 255, 0.18);
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-     nav .navigetion ul.active{
-        right: 0;
-     }
-
+       position: absolute;
+       top: 0;
+       right: -220px; 
+       width: 220px;
+       height: 100vh;
+       background: rgba(11, 17, 12, 0.45);
+       backdrop-filter: blur(4.5px);
+       border: 1px solid rgba(0, 0, 0, 0.2);
+       display: flex;
+       flex-direction: column;
+       justify-content: flex-start;
+       align-items: flex-start
+}
     nav .navigetion ul li {
-        padding: 20px 0 20px 40px;
-        margin-left: 0;
+        margin: 40px 20px;
     }
-    nav .navigetion ul li a{
-        color: #ffffff;
+    nav .navigetion ul li a {
+        font-size: 18px;
     }
 
-    #home {
-        padding-top: 0px;
+    #features .fea-base {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     }
-    #home p {
-        width: 90px;
+
+    #registration .form {
+        width: 100%;
+        padding: 20px 20px 20px 20px;
     }
-    #features {
-        padding: 8vw 4vw 0 4vw;
-    }
+
+
 }
 
